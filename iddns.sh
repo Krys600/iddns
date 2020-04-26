@@ -42,7 +42,9 @@ function usage()
     echo "  -i  IPv4 or IPv6 to assign to the hostname"
     echo "  -g  URL of and endpoints that returns your public IP address"
     echo "  -q  Do not output any message"
-    echo "  -t  Prepend all output with the date and time"
+    echo "  -t  Prepend all output with the 
+    
+    and time"
     echo "  -p  Infomaniak Dynamic DNS API password"
     echo "  -u  Infomaniak Dynamic DNS API username"
     echo "  -v  Display version"
@@ -54,7 +56,7 @@ function log()
 {
     if [[ ${IDDNS_SILENT} = false ]]; then
         if [[ ${IDDNS_TIMESTAMPS} = true ]]; then
-            echo "$(date -u) : $1"
+            echo "$(date) : $1"
         else
             echo $1
         fi
